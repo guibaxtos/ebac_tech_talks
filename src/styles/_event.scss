@@ -1,0 +1,39 @@
+.event{
+    padding: 80px 0;
+    background-image: linear-gradient(#1b6ca7, #442bdb);
+
+    .container{
+        display: flex;
+
+        @media (max-width:640px){
+            display: block;
+        }
+    }
+
+    &__image{
+        max-width: 360px;
+
+        @media (max-width: 640px){
+            width: 100%;
+        }
+    }
+
+    &__details{
+        margin-right: 40px;
+
+        @media (max-width: 640px){
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+
+        &__title{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description{
+            line-height: 22px;
+        }
+    }
+}
